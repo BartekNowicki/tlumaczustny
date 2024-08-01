@@ -26,3 +26,7 @@ dist-ssr
 # IntelliJ IDEA specific files
 .idea/
 *.iml
+
+# Default ignored files
+/shelf/
+/workspace.xml
