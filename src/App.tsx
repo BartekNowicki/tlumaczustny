@@ -36,19 +36,32 @@ const sections = [
 
 function App() {
   return (
-    <div className="container">
-      <h1>Bardo Language Development</h1>
-      {sections.map((section, index) => (
-        <div key={index} className="section">
-          <h2>{section.header}</h2>
-          <img src={section.image} alt={`Section ${index + 1}`} />
-          {Array.isArray(section.text) ? (
-            section.text.map((paragraph, i) => <p key={i}>{paragraph}</p>)
-          ) : (
-            <p>{section.text}</p>
-          )}
-        </div>
-      ))}
+    <div>
+      <div className="header">bardo@bardo.edu.pl</div>
+      <div className="container">
+        <h1>Bardo Language Development</h1>
+        {sections.map((section, index) => (
+          <div key={index} className="section">
+            <h2>{section.header}</h2>
+            <img src={section.image} alt={`Section ${index + 1}`} />
+            {Array.isArray(section.text) ? (
+              section.text.map((paragraph, i) => <p key={i}>{paragraph}</p>)
+            ) : (
+              <p>{section.text}</p>
+            )}
+          </div>
+        ))}
+      </div>
+
+
+      <div className="footer">
+              <div>
+              <p>BARDO Bartosz Nowicki</p>
+                <p>NIP 1132152032</p>
+                <p>REGON 016407315</p>
+              </div>
+      </div>
+
     </div>
   );
 }
