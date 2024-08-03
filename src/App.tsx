@@ -2,8 +2,8 @@ import './reset.css';
 import './App.css';
 import { paragraph1_1, paragraph1_2, paragraph1_3, paragraph1_4, paragraph1_5 } from './assets/data/section1';
 import { paragraph2_1, paragraph2_2, paragraph2_3, paragraph2_4, paragraph2_5 } from './assets/data/section2';
-import section3Text from './assets/data/section3';
-import section4Text from './assets/data/section4';
+import { paragraph3_1, paragraph3_2, paragraph3_3, paragraph3_4, paragraph3_5 } from './assets/data/section3';
+import { paragraph4_1, paragraph4_2, paragraph4_3, paragraph4_4, paragraph4_5 } from './assets/data/section4';
 import section5Text from './assets/data/section5';
 
 const sections = [
@@ -18,13 +18,13 @@ const sections = [
     image: "https://via.placeholder.com/150"
   },
   {
-    header: "Header 3",
-    text: section3Text,
+    header: "Garść informacji o mnie",
+    text: [paragraph3_1, paragraph3_2, paragraph3_3, paragraph3_4, paragraph3_5],
     image: "https://via.placeholder.com/150"
   },
   {
-    header: "Header 4",
-    text: section4Text,
+    header: "Metodologia podejścia leksykalnego",
+    text: [paragraph4_1, paragraph4_2, paragraph4_3, paragraph4_4, paragraph4_5],
     image: "https://via.placeholder.com/150"
   },
   {
