@@ -10,12 +10,12 @@ import { paragraph7_1, paragraph7_2, paragraph7_3, paragraph7_4, paragraph7_5, p
 
 const sections = [
   {
-    header: "Problem z konwersacjami",
+    header: "Konwersacje - kiedy pomagają i jak znaleźć właściwe podejście?",
     text: [paragraph1_1, paragraph1_2, paragraph1_3, paragraph1_4, paragraph1_5],
     image: "https://via.placeholder.com/150"
   },
   {
-    header: "Moja propozycja jako rozwiązanie problemu",
+    header: "Moja propozycja jako rozwiązanie powyższych problemów",
     text: [paragraph2_1, paragraph2_2, paragraph2_3, paragraph2_4, paragraph2_5],
     image: "https://via.placeholder.com/150"
   },
@@ -46,22 +46,34 @@ const sections = [
     }
 ];
 
+const Paragraph = ({ header, content }) => (
+  <p>
+    <span className="paragraph-header">{header}</span>{content}
+  </p>
+);
+
 function App() {
   return (
     <div>
       <div className="header">bardo@bardo.edu.pl</div>
       <div className="container">
         <h1>Bardo Language Development</h1>
-        <h2>Konwersacje indywidualne, konwersacje grupowe, warsztaty językowe </h2>
+        <ul className="inline-list">
+          <li>konwersacje indywidualne</li>
+          <li>konwersacje grupowe</li>
+          <li>warsztaty językowe</li>
+        </ul>
         {sections.map((section, index) => (
           <div key={index} className="section">
             <h2>{section.header}</h2>
             <img src={section.image} alt={`Section ${index + 1}`} />
             {Array.isArray(section.text) ? (
-              section.text.map((paragraph, i) => <p key={i}>{paragraph}</p>)
-            ) : (
-              <p>{section.text}</p>
-            )}
+                          section.text.map((paragraph, i) => (
+                            <Paragraph key={i} header={paragraph.header} content={paragraph.content} />
+                          ))
+                        ) : (
+                          <p>{section.text}</p>
+                        )}
           </div>
         ))}
       </div>

@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+html {}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
@@ -20,6 +24,29 @@ body {
   padding: 60px 20px 60px 20px;
 }
 
+.inline-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inline-list li {
+  margin: 0 10px;
+  position: relative;
+}
+
+.inline-list li::before {
+  content: "•"; /* Bullet point */
+  position: absolute;
+  left: -15px; /* Adjust this value to control the space between the bullet and the text */
+}
+
+.inline-list li:first-child::before {
+  content: ""; /* Remove the bullet point from the first item */
+}
+
 .container {
   width: 100%;
   max-width: 600px;
@@ -33,11 +60,15 @@ body {
 
 h1 {
   text-align: center;
+  color: rgb(128, 0, 32);
+  font-size: 32px;
   margin: 20px 0;
 }
 
 h2 {
   text-align: center;
+  color: rgb(178, 34, 34);
+  font-size: 18px;
   margin: 20px 0;
 }
 
@@ -79,12 +110,17 @@ h2 {
   z-index: 1000;
 }
 
+.paragraph-header {
+  font-weight: bold;
+  color: #800020; /* Dark burgundy */
+}
+
 .footer {
   background-color: black;
   color: white;
   text-align: center;
   padding: 10px 0;
-  margin-top: 20px; /* Add space between content and footer */
+  margin-top: 20px;
 }
 
 .footer div {
