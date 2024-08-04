@@ -4,7 +4,9 @@ import { paragraph1_1, paragraph1_2, paragraph1_3, paragraph1_4, paragraph1_5 } 
 import { paragraph2_1, paragraph2_2, paragraph2_3, paragraph2_4, paragraph2_5 } from './assets/data/section2';
 import { paragraph3_1, paragraph3_2, paragraph3_3, paragraph3_4, paragraph3_5 } from './assets/data/section3';
 import { paragraph4_1, paragraph4_2, paragraph4_3, paragraph4_4, paragraph4_5 } from './assets/data/section4';
-import section5Text from './assets/data/section5';
+import { paragraph5_1, paragraph5_2, paragraph5_3, paragraph5_4, paragraph5_5, paragraph5_6 } from './assets/data/section5';
+import { paragraph6_1, paragraph6_2, paragraph6_3, paragraph6_4, paragraph6_5, paragraph6_6 } from './assets/data/section6';
+import { paragraph7_1, paragraph7_2, paragraph7_3, paragraph7_4, paragraph7_5, paragraph7_6 } from './assets/data/section7';
 
 const sections = [
   {
@@ -28,10 +30,20 @@ const sections = [
     image: "https://via.placeholder.com/150"
   },
   {
-    header: "Header 5",
-    text: section5Text,
+    header: "Zapisy",
+    text: [paragraph5_1, paragraph5_2, paragraph5_3, paragraph5_4, paragraph5_5, paragraph5_6],
     image: "https://via.placeholder.com/150"
-  }
+  },
+  {
+      header: "Cennik",
+      text: [paragraph6_1, paragraph6_2, paragraph6_3, paragraph6_4, paragraph6_5, paragraph6_6],
+      image: "https://via.placeholder.com/150"
+  },
+  {
+      header: "Lokalizacja",
+      text: [paragraph7_1, paragraph7_2, paragraph7_3, paragraph7_4, paragraph7_5, paragraph7_6],
+      image: "https://via.placeholder.com/150"
+    }
 ];
 
 function App() {
@@ -40,6 +52,7 @@ function App() {
       <div className="header">bardo@bardo.edu.pl</div>
       <div className="container">
         <h1>Bardo Language Development</h1>
+        <h2>Konwersacje indywidualne, konwersacje grupowe, warsztaty językowe </h2>
         {sections.map((section, index) => (
           <div key={index} className="section">
             <h2>{section.header}</h2>
