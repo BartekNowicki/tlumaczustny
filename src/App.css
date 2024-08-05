@@ -98,18 +98,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-.header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  z-index: 1000;
-}
-
 .paragraph-header {
   font-weight: bold;
   color: #800020; /* Dark burgundy */

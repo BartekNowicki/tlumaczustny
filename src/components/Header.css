@@ -1,0 +1,64 @@
+.header {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px; /* Ensures the header content width matches the footer */
+  width: 100%; /* Ensures the header content takes the full width */
+  margin: 0 auto; /* Centers the header content */
+  padding: 0 20px; /* Padding for inner content */
+}
+
+.email {
+  display: flex;
+  align-items: center;
+}
+
+.email svg {
+  margin-right: 8px;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: #000;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.navbar li {
+  padding: 10px 0;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: #444;
+}
