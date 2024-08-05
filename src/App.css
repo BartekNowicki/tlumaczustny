@@ -128,6 +128,12 @@ h2 {
   margin: 0 auto;
 }
 
+.reviews {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
 /* Media queries for responsive design */
 @media (min-width: 768px) {
   body {

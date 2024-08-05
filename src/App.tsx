@@ -7,7 +7,7 @@ import { paragraph4_1, paragraph4_2, paragraph4_3, paragraph4_4, paragraph4_5 } 
 import { paragraph5_1, paragraph5_2, paragraph5_3, paragraph5_4, paragraph5_5, paragraph5_6 } from './assets/data/section5';
 import { paragraph6_1, paragraph6_2, paragraph6_3, paragraph6_4, paragraph6_5, paragraph6_6 } from './assets/data/section6';
 import { paragraph7_1, paragraph7_2, paragraph7_3, paragraph7_4, paragraph7_5, paragraph7_6 } from './assets/data/section7';
-
+import reviews from './assets/reviews.jpg';
 const sections = [
   {
     header: "Konwersacje - kiedy pomagają i jak znaleźć właściwe podejście?",
@@ -64,8 +64,7 @@ function App() {
       <div className="container">
         <h1>Bardo Language Development</h1>
         <ul className="inline-list">
-          <li>konwersacje indywidualne</li>
-          <li>konwersacje grupowe</li>
+          <li>konwersacje indywidualne i grupowe</li>
           <li>warsztaty językowe</li>
         </ul>
         {sections.map((section, index) => (
@@ -90,8 +89,8 @@ function App() {
                 <p>NIP 1132152032</p>
                 <p>REGON 016407315</p>
               </div>
+              <img src={reviews} alt="google reviews" className="reviews" />
       </div>
-
     </div>
   );
 }
