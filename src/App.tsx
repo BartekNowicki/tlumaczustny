@@ -9,12 +9,14 @@ import { paragraph6_1, paragraph6_2, paragraph6_3, paragraph6_4, paragraph6_5, p
 import { paragraph7_1, paragraph7_2, paragraph7_3, paragraph7_4, paragraph7_5, paragraph7_6 } from './assets/data/section7';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import bardo from './assets/bardo.jpg';
 import konwersacje from './assets/konwersacje.jpg';
 import rozwiazanie from './assets/rozwiazanie.jpg';
 import metodologia from './assets/metodologia.jpg';
 import zapisy from './assets/zapisy.jpg';
 import cennik from './assets/cennik.jpg';
 import lokalizacja from './assets/lokalizacja.jpg';
+
 const sections = [
   {
     id: "section1",
@@ -76,11 +78,7 @@ function App() {
     <div>
       <Header />
       <div className="container">
-        <h1>Bardo Language Development</h1>
-        <ul className="inline-list">
-          <li>konwersacje indywidualne i grupowe</li>
-          <li>warsztaty językowe</li>
-        </ul>
+        <img src={bardo} alt="Bardo logo" className="bardo-logo" />
         {sections.map((section, index) => (
           <div key={index} id={section.id} className="section">
             <h2>{section.header}</h2>
