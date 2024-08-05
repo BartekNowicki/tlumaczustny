@@ -10,6 +10,20 @@ const Header: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+   const scrollToSection = (id: string) => {
+      const element = document.getElementById(id);
+      const offset = 20;
+      if (element) {
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - offset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+        setIsOpen(false);
+      }
+    };
+
   return (
     <header className="header">
       <div className="header-content">
@@ -24,10 +38,13 @@ const Header: React.FC = () => {
       {isOpen && (
         <nav className="navbar">
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#section1" onClick={(e) => { e.preventDefault(); scrollToSection('section1'); }}>Intro</a></li>
+            <li><a href="#section2" onClick={(e) => { e.preventDefault(); scrollToSection('section2'); }}>Propozycja</a></li>
+            <li><a href="#section3" onClick={(e) => { e.preventDefault(); scrollToSection('section3'); }}>O mnie</a></li>
+            <li><a href="#section4" onClick={(e) => { e.preventDefault(); scrollToSection('section4'); }}>Metodologia</a></li>
+            <li><a href="#section5" onClick={(e) => { e.preventDefault(); scrollToSection('section5'); }}>Zapisy</a></li>
+            <li><a href="#section6" onClick={(e) => { e.preventDefault(); scrollToSection('section6'); }}>Cennik</a></li>
+            <li><a href="#section7" onClick={(e) => { e.preventDefault(); scrollToSection('section7'); }}>Lokalizacja</a></li>
           </ul>
         </nav>
       )}

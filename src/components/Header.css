@@ -16,10 +16,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 600px; /* Ensures the header content width matches the footer */
-  width: 100%; /* Ensures the header content takes the full width */
-  margin: 0 auto; /* Centers the header content */
-  padding: 0 20px; /* Padding for inner content */
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .email {
