@@ -8,7 +8,8 @@ import { paragraph5_1, paragraph5_2, paragraph5_3, paragraph5_4, paragraph5_5, p
 import { paragraph6_1, paragraph6_2, paragraph6_3, paragraph6_4, paragraph6_5, paragraph6_6 } from './assets/data/section6';
 import { paragraph7_1, paragraph7_2, paragraph7_3, paragraph7_4, paragraph7_5, paragraph7_6 } from './assets/data/section7';
 import Header from './components/Header';
-import reviews from './assets/reviews.jpg';
+import Footer from './components/Footer';
+// import reviews from './assets/reviews.jpg';
 const sections = [
   {
     id: "section1",
@@ -89,16 +90,7 @@ function App() {
           </div>
         ))}
       </div>
-
-
-      <div className="footer">
-              <div>
-              <p>BARDO Bartosz Nowicki</p>
-                <p>NIP 1132152032</p>
-                <p>REGON 016407315</p>
-              </div>
-              <img src={reviews} alt="google reviews" className="reviews" />
-      </div>
+     <Footer />
     </div>
   );
 }
