@@ -9,19 +9,24 @@ import { paragraph6_1, paragraph6_2, paragraph6_3, paragraph6_4, paragraph6_5, p
 import { paragraph7_1, paragraph7_2, paragraph7_3, paragraph7_4, paragraph7_5, paragraph7_6 } from './assets/data/section7';
 import Header from './components/Header';
 import Footer from './components/Footer';
-// import reviews from './assets/reviews.jpg';
+import konwersacje from './assets/konwersacje.jpg';
+import rozwiazanie from './assets/rozwiazanie.jpg';
+import metodologia from './assets/metodologia.jpg';
+import zapisy from './assets/zapisy.jpg';
+import cennik from './assets/cennik.jpg';
+import lokalizacja from './assets/lokalizacja.jpg';
 const sections = [
   {
     id: "section1",
     header: "Konwersacje - kiedy pomagają i jak znaleźć właściwe podejście?",
     text: [paragraph1_1, paragraph1_2, paragraph1_3, paragraph1_4, paragraph1_5],
-    image: "https://via.placeholder.com/150"
+    image: konwersacje
   },
   {
     id: "section2",
     header: "Moja propozycja jako rozwiązanie powyższych problemów",
     text: [paragraph2_1, paragraph2_2, paragraph2_3, paragraph2_4, paragraph2_5],
-    image: "https://via.placeholder.com/150"
+    image: rozwiazanie
   },
   {
     id: "section3",
@@ -33,25 +38,25 @@ const sections = [
     id: "section4",
     header: "Metodologia podejścia leksykalnego",
     text: [paragraph4_1, paragraph4_2, paragraph4_3, paragraph4_4, paragraph4_5],
-    image: "https://via.placeholder.com/150"
+    image: metodologia
   },
   {
     id: "section5",
     header: "Zapisy",
     text: [paragraph5_1, paragraph5_2, paragraph5_3, paragraph5_4, paragraph5_5, paragraph5_6],
-    image: "https://via.placeholder.com/150"
+    image: zapisy
   },
   {
       id: "section6",
       header: "Cennik",
       text: [paragraph6_1, paragraph6_2, paragraph6_3, paragraph6_4, paragraph6_5, paragraph6_6],
-      image: "https://via.placeholder.com/150"
+      image: cennik
   },
   {
       id: "section7",
       header: "Lokalizacja",
       text: [paragraph7_1, paragraph7_2, paragraph7_3, paragraph7_4, paragraph7_5, paragraph7_6],
-      image: "https://via.placeholder.com/150"
+      image: lokalizacja
     }
 ];
 
