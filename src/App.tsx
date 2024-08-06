@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import bardo from './assets/bardo.jpg';
 import konwersacje from './assets/konwersacje.jpg';
 import rozwiazanie from './assets/rozwiazanie.jpg';
+import bartek from './assets/Bartek.jpg';
 import metodologia from './assets/metodologia.jpg';
 import zapisy from './assets/zapisy.jpg';
 import cennik from './assets/cennik.jpg';
@@ -34,7 +35,7 @@ const sections = [
     id: "section3",
     header: "Garść informacji o mnie",
     text: [paragraph3_1, paragraph3_2, paragraph3_3, paragraph3_4, paragraph3_5],
-    image: "https://via.placeholder.com/150"
+    image: bartek
   },
   {
     id: "section4",
