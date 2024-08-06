@@ -2,6 +2,7 @@ import './reset.css';
 import './App.css';
 
 import bardo from './assets/bardo.jpg';
+import Bartek_interpreting from './assets/Bartek_interpreting.jpg';
 import sections from './assets/data/sections';
 
 import Header from './components/Header';
@@ -26,11 +27,14 @@ function App() {
         <img src={bardo} alt="Bardo logo" className="bardo-logo" />
         {sections.map((section, index) => (
           <div key={index} id={section.id} className="section">
-            <h2>{section.header}</h2>
+            <h1>{section.header}</h1>
             <img src={section.image} alt={`Section ${index + 1}`} />
             {Array.isArray(section.text) ? (
                           section.text.map((paragraph, i) => (
+                          <div key={`${section.id}-${i}`}>
                             <Paragraph key={i} header={paragraph.header} content={paragraph.content} />
+                            {section.id === "section3" && i === 3 && <img src={Bartek_interpreting} alt="Bartek_interpreting" className="" />}
+                          </div>
                           ))
                         ) : (
                           <p>{section.text}</p>

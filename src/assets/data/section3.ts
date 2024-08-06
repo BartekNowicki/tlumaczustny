@@ -23,12 +23,22 @@ const paragraph3_3 = {
 
 const paragraph3_4 = {
   header: `Przez ponad dziesiąć lat prowadziłem szkołę językową`,
-  content: ` gdzie nauczałem stosując podejście konwersacyjne, po czym zaangażowałem się w tłumaczenia konferencyjne. Dzięki dwujęzyczności zostałem tłumaczem ustnym i pracowałem przez kolejną dekadę tłumacząc w trybie konsekutywnym oraz symultanicznym (w kabinie polsko - angielskiej) spotkania formalne oraz warsztatowe w tematyce sięgającej od biznesu poprzez politykę, naukę, technologię, aż po himalaistykę czy teatr i dramę. Przez niemal dziesięć lat pracy konferencyjnej zagłębiłem się merytorycznie oraz terminologicznie w niemal każdy temat, który omawia się w kręgach międzynarodowych. To była przygoda niezmiernie ekscytująca, ale też bardzo wymagająca językowo! Jestem i pozostaję dwujęzyczny, choć to niełatwe zadanie, wymagające dużego nakładu pracy zarówno po stronie języka angielskiego, jak i polskiego, w rejestrach nieformalnych oraz formalnych.  W obu językach mówię na poziomie native speaker, dzięki czemu będę z przyjemnością prowadził Cię przez meandry językowe niedostępne nauczycielom wychowanym w Polsce. Moją szczególną pasją jest przyglądanie się różnym odcieniom języka mówionego pod kątem rozbieżności w sposobie myślenia i formułowania wypowiedzi pomiędzy językiem polskim i angielskim.`
+  content: ` gdzie nauczałem stosując podejście konwersacyjne, po czym zaangażowałem się w tłumaczenia konferencyjne. Dzięki dwujęzyczności zostałem tłumaczem ustnym i pracowałem przez kolejną dekadę tłumacząc w trybie konsekutywnym oraz symultanicznym (w kabinie polsko - angielskiej) spotkania formalne oraz warsztatowe w tematyce sięgającej od biznesu poprzez politykę, naukę, technologię, aż po himalaistykę czy teatr i dramę.`
 };
 
 const paragraph3_5 = {
+  header: `Przez niemal dziesięć lat pracy konferencyjnej`,
+  content: ` zagłębiłem się merytorycznie oraz terminologicznie w niemal każdy temat, który omawia się w kręgach międzynarodowych. To była przygoda niezmiernie ekscytująca, ale też bardzo wymagająca językowo! Jestem i pozostaję dwujęzyczny, choć to niełatwe zadanie, wymagające dużego nakładu pracy zarówno po stronie języka angielskiego, jak i polskiego, w rejestrach nieformalnych oraz formalnych.`
+};
+
+const paragraph3_6 = {
+  header: `W obu językach mówię na poziomie native speaker`,
+  content: `, dzięki czemu będę z przyjemnością prowadził Cię przez meandry językowe niedostępne nauczycielom wychowanym w Polsce. Moją szczególną pasją jest przyglądanie się różnym odcieniom języka mówionego pod kątem rozbieżności w sposobie myślenia i formułowania wypowiedzi pomiędzy językiem polskim i angielskim.`
+};
+
+const paragraph3_7 = {
   header: ``,
   content: ` Serdecznie zapraszam Cię na moje lekcje konwersacyjne :) Ale najpierw zapoznaj się także z metodą, którą uważam za najskuteczniejszą.`
 };
 
-export { paragraph3_1, paragraph3_2, paragraph3_3, paragraph3_4, paragraph3_5 };
+export { paragraph3_1, paragraph3_2, paragraph3_3, paragraph3_4, paragraph3_5, paragraph3_6, paragraph3_7 };
