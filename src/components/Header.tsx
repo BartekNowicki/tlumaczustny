@@ -39,7 +39,8 @@ const Header: React.FC = () => {
         <nav className="navbar">
           <ul>
             <li><a href="#section1" onClick={(e) => { e.preventDefault(); scrollToSection('section1'); }}>Intro</a></li>
-            <li><a href="#section2" onClick={(e) => { e.preventDefault(); scrollToSection('section2'); }}>Propozycja</a></li>
+            <li><a href="#section2" onClick={(e) => { e.preventDefault(); scrollToSection('section2a'); }}>Konwersacje</a></li>
+            <li><a href="#section2" onClick={(e) => { e.preventDefault(); scrollToSection('section2b'); }}>Warsztaty</a></li>
             <li><a href="#section3" onClick={(e) => { e.preventDefault(); scrollToSection('section3'); }}>O mnie</a></li>
             <li><a href="#section4" onClick={(e) => { e.preventDefault(); scrollToSection('section4'); }}>Metodologia</a></li>
             <li><a href="#section5" onClick={(e) => { e.preventDefault(); scrollToSection('section5'); }}>Zapisy</a></li>

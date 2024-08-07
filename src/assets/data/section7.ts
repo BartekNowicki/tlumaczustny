@@ -19,7 +19,7 @@ const paragraph7_2 = {
 
 const paragraph7_3 = {
   header: ``,
-  content: ``
+  content: `Warsztaty językowe odbywają się w różnych miejscach w Polsce.`
 };
 
 const paragraph7_4 = {
