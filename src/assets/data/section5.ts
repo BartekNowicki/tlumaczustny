@@ -8,23 +8,23 @@
 // export { paragraph5_1, paragraph5_2, paragraph5_3, paragraph5_4, paragraph5_5, paragraph5_6 };
 
 const paragraph5_1 = {
-  header: ``,
-  content: `Na konwersacje indywidualne możesz zapisać się przez cały rok - po prostu napisz do mnie maila po angielsku i opisz, czego potrzebujesz i kiedy :)`
+  header: `Na konwersacje indywidualne`,
+  content: ` możesz zapisać się przez cały rok - po prostu napisz do mnie maila po angielsku i opisz, czego potrzebujesz i kiedy :)`
 };
 
 const paragraph5_2 = {
-  header: ``,
-  content: `Nowe grupy (max 5 osób) startujące we wrześniu 2024 to:`
+  header: `Nowe grupy konwersacyjne (3 - 5 osób w grupie)`,
+  content: ` startujące we wrześniu 2024 to:`
 };
 
 const paragraph5_3 = {
-  header: `wtorki g. 18:00 - 19:00`,
-  content: ``
+  header: ``,
+  content: `wtorki g. 18:00 - 19:00`
 };
 
 const paragraph5_4 = {
-  header: `czwartki g. 18:00 - 19:00`,
-  content: ``
+  header: ``,
+  content: `czwartki g. 18:00 - 19:00`
 };
 
 const paragraph5_5 = {
@@ -33,8 +33,13 @@ const paragraph5_5 = {
 };
 
 const paragraph5_6 = {
+  header: `Kolejna edycja wyjazdowego warsztatu językowego odbędzie się we wrześniu 2024.`,
+  content: ` Jeżeli jesteś zainteresowana / zainteresowany - napisz do mnie po angielsku. Chętnie odpowiem na wszystkie pytania :)`
+};
+
+const paragraph5_7 = {
   header: ``,
   content: `Wszelkich informacji udzielam pod adresem bardo@bardo.edu.pl, zapraszam do kontaktu w języku angielskim - chciałbym upewnić się, że jesteś już na poziomie komunikatywnym.`
 };
 
-export { paragraph5_1, paragraph5_2, paragraph5_3, paragraph5_4, paragraph5_5, paragraph5_6 };
+export { paragraph5_1, paragraph5_2, paragraph5_3, paragraph5_4, paragraph5_5, paragraph5_6, paragraph5_7 };
