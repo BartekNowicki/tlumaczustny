@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,6 +32,9 @@ const Header: React.FC = () => {
         <div className="email">
           <FontAwesomeIcon icon={faEnvelope} />
           <span>bardo@bardo.edu.pl</span>
+          <a href="https://www.facebook.com/BardoLanguageDevelopment" target="_blank" rel="noopener noreferrer" className="facebook-icon">
+              <FontAwesomeIcon icon={faFacebook} />
+          </a>
         </div>
         <div className="menu-icon" onClick={toggleMenu}>
           <FontAwesomeIcon icon={faBars} />
