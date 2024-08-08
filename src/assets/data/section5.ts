@@ -19,17 +19,17 @@ const paragraph5_2 = {
 
 const paragraph5_3 = {
   header: ``,
-  content: `wtorki g. 18:00 - 19:00`
+  content: `GRUPA 1: wtorki g. 18:00 - 19:00`
 };
 
 const paragraph5_4 = {
   header: ``,
-  content: `czwartki g. 18:00 - 19:00`
+  content: `GRUPA 2: czwartki g. 18:00 - 19:00`
 };
 
 const paragraph5_5 = {
   header: ``,
-  content: `Są jeszcze wolne miejsca, zapisy trwają :)`
+  content: `Są jeszcze wolne miejsca w obu grupach, zapisy trwają :)`
 };
 
 const paragraph5_6 = {

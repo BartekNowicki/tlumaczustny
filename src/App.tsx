@@ -31,9 +31,12 @@ function App() {
             <img src={section.image} alt={`Section ${index + 1}`} />
             {Array.isArray(section.text) ? (
                           section.text.map((paragraph, i) => (
-                          <div key={`${section.id}-${i}`}>
+                          <div
+                                key={`${section.id}-${i}`}
+                                className={section.id === "section5" && (i === 0 || i === 1 || i === 5) ? 'darker-background' : ''}
+                          >
                             <Paragraph key={i} header={paragraph.header} content={paragraph.content} />
-                            {section.id === "section3" && i === 3 && <img src={Bartek_interpreting} alt="Bartek_interpreting" className="" />}
+                            {section.id === "section3" && i === 4 && <img src={Bartek_interpreting} alt="Bartek_interpreting" className="" />}
                           </div>
                           ))
                         ) : (

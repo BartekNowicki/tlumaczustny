@@ -10,7 +10,7 @@ const paragraph2b_2 = {
 
 const paragraph2b_3 = {
   header: ``,
-  content: `W sobotę prowadzę lekcje konwersacyjne 3 x 90min, w niedzielę 2x90min.`
+  content: `W trakcie weekendu prowadzę lekcje konwersacyjne: w sobotę 3 x 90min, w niedzielę 2x90min.`
 };
 
 const paragraph2b_4 = {
