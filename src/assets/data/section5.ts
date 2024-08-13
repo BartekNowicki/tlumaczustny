@@ -33,13 +33,13 @@ const paragraph5_5 = {
 };
 
 const paragraph5_6 = {
-  header: `Kolejna edycja wyjazdowego warsztatu językowego odbędzie się we wrześniu 2024.`,
-  content: ``
+  header: `Kolejna edycja wyjazdowego warsztatu językowego odbędzie się 13-15 września 2024 w pięknym Kazimierzu Dolnym.`,
+  content: ` Więcej informacji znajdziesz klikając tutaj:`
 };
 
 const paragraph5_7 = {
   header: ``,
-  content: `Wszelkich informacji udzielam pod adresami:`
+  content: `Dodatkowych informacji udzielam pod adresami:`
 };
 
 const paragraph5_8 = {
