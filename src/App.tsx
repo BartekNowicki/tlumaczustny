@@ -11,6 +11,9 @@ import sections from './assets/data/sections';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Popup from './components/Popup';
+import PopupContent from './components/PopupContent130924';
+
+import { scrollToSection } from './utils';
 
 interface ParagraphProps {
   header: string;
@@ -28,14 +31,8 @@ const [isPopupOpen, setIsPopupOpen] = useState(false);
 const [popupContent, setPopupContent] = useState<React.ReactNode>(null);
 
 const handleImageClick = () => {
-      const content = (
-        <div className="section">
-          <h1>{`Language Immersion in Kazimierz Dolny - September 13th-15th, 2024`}</h1>
-          <img src={KazimierzDolny} alt="Warsztaty językowe Kazimierz Dolny" className=""/>
-        </div>
-      );
-      setPopupContent(content);
-      setIsPopupOpen(true);
+    setPopupContent(<PopupContent />);
+    setIsPopupOpen(true);
   };
 
   const closePopup = () => {
@@ -59,15 +56,25 @@ const handleImageClick = () => {
                                 className={section.id === "section5" && (i === 0 || i === 1 || i === 5) ? 'darker-background' : ''}
                           >
                             <Paragraph key={i} header={paragraph.header} content={paragraph.content} />
+
                             {section.id === "section3" && i === 4 && <img src={Bartek_interpreting} alt="Bartek_interpreting" className="" />}
+
+                            {section.id === "section2b" && i === 3 && (
+                            <p>
+                            Zapisz się na  <a href="#kazimierz-dolny" onClick={(e) => { e.preventDefault(); scrollToSection('kazimierz-dolny', ()=>{}, 150) }}>
+                            kolejną edycję, która odbędzie się już wkrótce</a> w pięknym Kazimierzu Dolnym!
+                            </p>)}
+
                             {section.id === "section5" && i === 5 && (
-                                                <img
-                                                  src={KazimierzDolny}
-                                                  alt="Warsztaty językowe Kazimierz Dolny"
-                                                  className=""
-                                                  onClick={handleImageClick}
-                                                  style={{ cursor: 'pointer' }}
-                                                />
+                                                <div id="kazimierz-dolny">
+                                                    <img
+                                                      src={KazimierzDolny}
+                                                      alt="Warsztaty językowe Kazimierz Dolny"
+                                                      className=""
+                                                      onClick={handleImageClick}
+                                                      style={{ cursor: 'pointer' }}
+                                                    />
+                                                  </div>
                                               )}
                           </div>
                           ))
@@ -78,7 +85,7 @@ const handleImageClick = () => {
         ))}
       </div>
      <Footer />
-     {isPopupOpen && ( <Popup sectionContent={popupContent} onClose={closePopup} /> )}
+     {isPopupOpen && ( <Popup popupContent={popupContent} onClose={closePopup} /> )}
     </div>
   );
 }

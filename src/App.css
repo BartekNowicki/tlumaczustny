@@ -109,6 +109,19 @@ h2 {
   display: block;
 }
 
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+strong {
+  font-weight: bold;
+}
+
 /* Media queries for responsive design */
 @media (min-width: 768px) {
   body {
