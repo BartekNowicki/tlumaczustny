@@ -1,7 +1,7 @@
 import './reset.css';
 import './App.css';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import bardo from './assets/bardo.jpg';
 import Bartek_interpreting from './assets/Bartek_interpreting.jpg';
@@ -39,6 +39,16 @@ const handleImageClick = () => {
     setIsPopupOpen(false);
     setPopupContent(null);
   };
+
+   useEffect(() => {
+      // Check if there's a hash in the URL
+      const hash = window.location.hash;
+      if (hash) {
+        // Remove the '#' and scroll to the corresponding section
+        const id = hash.substring(1);
+        scrollToSection(id, () => {}, 150);
+      }
+    }, []);
 
   return (
     <div>
