@@ -13,7 +13,7 @@ const paragraph3_1 = {
 
 const paragraph3_2 = {
   header: ``,
-  content: `Nazywam się Bartek.`
+  content: `Mam na imię Bartek.`
 };
 
 const paragraph3_3 = {
