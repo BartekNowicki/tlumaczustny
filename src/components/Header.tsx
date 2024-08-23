@@ -18,10 +18,7 @@ const Header: React.FC = () => {
       <div className="header-content">
         <div className="email">
           <FontAwesomeIcon icon={faEnvelope} />
-          <span>bardo@bardo.edu.pl</span>
-          <a href="https://www.facebook.com/BardoLanguageDevelopment" target="_blank" rel="noopener noreferrer" className="facebook-icon">
-              <FontAwesomeIcon icon={faFacebook} />
-          </a>
+          <span>tlumaczenia@tlumaczustnynawarsztaty.pl</span>
         </div>
         <div className="menu-icon" onClick={toggleMenu}>
           <FontAwesomeIcon icon={faBars} />
@@ -30,14 +27,12 @@ const Header: React.FC = () => {
       {isOpen && (
         <nav className="navbar">
           <ul>
-           <li><a href="#section1" onClick={(e) => { e.preventDefault(); scrollToSection('section1', setIsOpen); }}>Intro</a></li>
-           <li><a href="#section2" onClick={(e) => { e.preventDefault(); scrollToSection('section2a', setIsOpen); }}>Konwersacje</a></li>
-           <li><a href="#section2" onClick={(e) => { e.preventDefault(); scrollToSection('section2b', setIsOpen); }}>Warsztaty</a></li>
-           <li><a href="#section3" onClick={(e) => { e.preventDefault(); scrollToSection('section3', setIsOpen); }}>O mnie</a></li>
-           <li><a href="#section4" onClick={(e) => { e.preventDefault(); scrollToSection('section4', setIsOpen); }}>Metodologia</a></li>
-           <li><a href="#section5" onClick={(e) => { e.preventDefault(); scrollToSection('section5', setIsOpen); }}>Zapisy</a></li>
-           <li><a href="#section6" onClick={(e) => { e.preventDefault(); scrollToSection('section6', setIsOpen); }}>Cennik</a></li>
-           <li><a href="#section7" onClick={(e) => { e.preventDefault(); scrollToSection('section7', setIsOpen); }}>Lokalizacja</a></li>
+           <li><a href="#section1" onClick={(e) => { e.preventDefault(); scrollToSection('section1', setIsOpen); }}>1</a></li>
+           <li><a href="#section2" onClick={(e) => { e.preventDefault(); scrollToSection('section2', setIsOpen); }}>2</a></li>
+           <li><a href="#section3" onClick={(e) => { e.preventDefault(); scrollToSection('section3', setIsOpen); }}>3</a></li>
+           <li><a href="#section4" onClick={(e) => { e.preventDefault(); scrollToSection('section4', setIsOpen); }}>4</a></li>
+           <li><a href="#section5" onClick={(e) => { e.preventDefault(); scrollToSection('section5', setIsOpen); }}>5</a></li>
+           <li><a href="#section6" onClick={(e) => { e.preventDefault(); scrollToSection('section6', setIsOpen); }}>6</a></li>
            </ul>
         </nav>
       )}

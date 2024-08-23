@@ -3,15 +3,12 @@ import './App.css';
 
 import React, { useState, useEffect } from 'react';
 
-import bardo from './assets/bardo.jpg';
+import logo from './assets/logo.png';
 import Bartek_interpreting from './assets/Bartek_interpreting.jpg';
-import KazimierzDolny from './assets/KazimierzDolny.jpg';
 import sections from './assets/data/sections';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Popup from './components/Popup';
-import PopupContent from './components/PopupContent130924';
 
 import { scrollToSection } from './utils';
 
@@ -40,21 +37,11 @@ const handleImageClick = () => {
     setPopupContent(null);
   };
 
-   useEffect(() => {
-      // Check if there's a hash in the URL
-      const hash = window.location.hash;
-      if (hash) {
-        // Remove the '#' and scroll to the corresponding section
-        const id = hash.substring(1);
-        scrollToSection(id, () => {}, 150);
-      }
-    }, []);
-
   return (
     <div>
       <Header />
       <div className="container">
-        <img src={bardo} alt="Bardo logo" className="bardo-logo" />
+        <img src={logo} alt="logo" className="bardo-logo" />
         {sections.map((section, index) => (
           <div key={index} id={section.id} className="section">
             <h1>{section.header}</h1>
@@ -69,23 +56,6 @@ const handleImageClick = () => {
 
                             {section.id === "section3" && i === 4 && <img src={Bartek_interpreting} alt="Bartek_interpreting" className="" />}
 
-                            {section.id === "section2b" && i === 3 && (
-                            <p>
-                            Zapisz się na  <a href="#kazimierz-dolny" onClick={(e) => { e.preventDefault(); scrollToSection('kazimierz-dolny', ()=>{}, 150) }}>
-                            kolejną edycję, która odbędzie się już wkrótce</a> w pięknym Kazimierzu Dolnym!
-                            </p>)}
-
-                            {section.id === "section5" && i === 5 && (
-                                                <div id="kazimierz-dolny">
-                                                    <img
-                                                      src={KazimierzDolny}
-                                                      alt="Warsztaty językowe Kazimierz Dolny"
-                                                      className=""
-                                                      onClick={handleImageClick}
-                                                      style={{ cursor: 'pointer' }}
-                                                    />
-                                                  </div>
-                                              )}
                           </div>
                           ))
                         ) : (
@@ -101,11 +71,3 @@ const handleImageClick = () => {
 }
 
 export default App;
-
-// Dla Kogo Jest Moja Metoda
-//                       Moja metoda nie jest dla każdego. Jest idealna dla tych, którzy:
-//
-//                       Rozumieją, na czym polega naturalne, poprawne wysławianie się
-//                       Chcą od razu ćwiczyć właściwy sposób formułowania myśli
-//                       Wolą naśladować native speakerów zamiast tworzyć własne konstrukcje językowe
-//                       Są zaangażowani w naukę i lubią kontakt z żywym językiem`;
